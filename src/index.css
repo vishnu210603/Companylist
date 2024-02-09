@@ -1,0 +1,121 @@
+body {
+  color: rgb(246, 235, 235);
+  background-color: black;
+  margin: 0;
+  border: 20px solid cadetblue;
+}
+
+h2 {
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: column; /* Change to column layout for vertical alignment */
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  scale: 1.0;
+}
+
+p {
+  color: white;
+  font-size: 2vw;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.flag {
+  margin-top: 20px; /* Add margin for spacing */
+  width: 90%;
+  height: 100px;
+}
+
+.header {
+  margin: 0;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column; /* Change to column layout for vertical alignment */
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 90%;
+}
+
+.management,.devteam,.salesteam {
+  background-color: cadetblue;
+  height: 40px;
+  width: 90%;
+  font-size: 2vw;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 2vw;
+  color: black;
+  height: 100px;
+  width: 90%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.team-info {
+  font-size: 2vw;
+  width: 90%;
+}
+
+.border {
+  font-size: 2vw;
+  color: white;
+}
+
+.lead1,.dev1,.sales1,.lead2,.dev2,.sales2 {
+  margin: 5vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.nameplate1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Add margin for spacing */
+  gap: 10vw;
+}
+
+.member,
+img {
+  box-sizing: border-box;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: cadetblue;
+}
+
+.content1 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .flag,.company-info,.management,.devteam,.salesteam,.name,.team-info,.border,.lead1,.dev1,.sales1,.lead2,.dev2,.sales2,.nameplate1 {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flag,.management,.company-info,.devteam,.salesteam,.name,.team-info,.border,.lead1,.dev1,.sales1,.lead2,.dev2,.sales2,.nameplate1 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 3vw;
+  }
+}
